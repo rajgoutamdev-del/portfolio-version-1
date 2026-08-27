@@ -1,0 +1,85 @@
+.wrapper {
+  --diagram-signal: #d9a45c;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+  margin-bottom: var(--space-6);
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: var(--fs-small);
+  color: var(--color-text-dim);
+}
+
+.legendLine {
+  width: 20px;
+  height: 0;
+  border-top: 2px solid currentColor;
+  display: inline-block;
+}
+
+.legendLine[data-style='dashed'] {
+  border-top-style: dashed;
+}
+
+.legendItem[data-kind='request'] {
+  color: var(--color-violet);
+}
+
+.legendItem[data-kind='signal'] {
+  color: var(--diagram-signal);
+}
+
+.frame {
+  overflow-x: auto;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: var(--space-4);
+  background: var(--color-surface);
+}
+
+.svg {
+  display: block;
+  width: 100%;
+  min-width: 840px;
+  height: auto;
+}
+
+.boxLabel {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 13.5px;
+  fill: var(--color-text);
+}
+
+.boxSublabel {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  fill: var(--color-text-dim);
+}
+
+.arrowLabel {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  fill: var(--color-text-faint);
+}
+
+.signalLabel {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  fill: var(--diagram-signal);
+}
+
+.caption {
+  margin-top: var(--space-4);
+  max-width: 74ch;
+  font-size: var(--fs-small);
+  color: var(--color-text-dim);
+}

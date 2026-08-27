@@ -8,6 +8,7 @@ import { ProfessionalProjectSection } from './sections/ProfessionalProject/Profe
 import { LabTransition } from './sections/LabTransition/LabTransition';
 import { PersonalProjectSection } from './sections/PersonalProject/PersonalProjectSection';
 import { FreelancingOrgDeepDive } from './sections/FreelancingOrg/FreelancingOrgDeepDive';
+import { StellaDeepDive } from './sections/Stella/StellaDeepDive';
 import { Toolbox } from './sections/Toolbox/Toolbox';
 import { Philosophy } from './sections/Philosophy/Philosophy';
 import { BeyondTheScreen } from './sections/BeyondTheScreen/BeyondTheScreen';
@@ -40,6 +41,7 @@ export function App() {
         <PersonalProjectSection project={FREELANCING_ORG} scrollId={SCROLL_IDS.freelancingOrg} />
         <FreelancingOrgDeepDive />
         <PersonalProjectSection project={STELLA} scrollId={SCROLL_IDS.stella} />
+        <StellaDeepDive />
         <PersonalProjectSection project={CHESS} scrollId={SCROLL_IDS.chess} />
         <PersonalProjectSection project={WEDDING} scrollId={SCROLL_IDS.wedding} />
         <Toolbox />

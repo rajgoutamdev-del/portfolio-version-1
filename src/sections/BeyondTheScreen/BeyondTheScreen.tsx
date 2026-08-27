@@ -20,16 +20,20 @@ export function BeyondTheScreen() {
             src={personalPic}
             alt={BEYOND_SCREEN_MOMENTS.outdoors.alt}
             aspectRatio="4 / 5"
+            className={styles.frame}
           />
           <span className={styles.caption}>{BEYOND_SCREEN_MOMENTS.outdoors.label}</span>
+          <p className={styles.description}>{BEYOND_SCREEN_MOMENTS.outdoors.description}</p>
         </div>
         <div className={styles.moment}>
           <CinematicImage
             src={bikePic}
             alt={BEYOND_SCREEN_MOMENTS.riding.alt}
             aspectRatio="3 / 2"
+            className={styles.frame}
           />
           <span className={styles.caption}>{BEYOND_SCREEN_MOMENTS.riding.label}</span>
+          <p className={styles.description}>{BEYOND_SCREEN_MOMENTS.riding.description}</p>
         </div>
       </div>
     </Section>

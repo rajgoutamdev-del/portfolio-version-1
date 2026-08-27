@@ -1,17 +1,16 @@
 import Lenis from 'lenis';
-import { ensureGsapRegistered, gsap, ScrollTrigger } from '../animations/gsapSetup';
+import { gsap, ScrollTrigger } from '../animations/gsapSetup';
 
 let lenis: Lenis | null = null;
 
 /**
  * Initializes the module-singleton Lenis instance and wires it to GSAP's
  * ticker/ScrollTrigger. Guarded so React 19 StrictMode's double-invoke
- * in dev doesn't create two instances.
+ * in dev doesn't create two instances. GSAP plugin registration happens
+ * at gsapSetup module load, not here -- see that file for why.
  */
 export function initLenis(): Lenis {
   if (lenis) return lenis;
-
-  ensureGsapRegistered();
 
   lenis = new Lenis({
     duration: 1.15,

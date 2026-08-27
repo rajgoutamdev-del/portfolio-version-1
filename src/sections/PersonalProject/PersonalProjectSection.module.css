@@ -1,0 +1,101 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.title {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+}
+
+.section[data-tier='1'] .title {
+  font-size: var(--fs-display);
+}
+
+.section[data-tier='2'] .title {
+  font-size: var(--fs-h1);
+}
+
+.section[data-tier='3'] .title {
+  font-size: var(--fs-h2);
+}
+
+.tagline {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--fs-body-lg);
+  color: var(--color-text-dim);
+  max-width: 48ch;
+}
+
+.copy {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-8);
+  margin-top: var(--space-8);
+}
+
+.copyBlock h3 {
+  font-family: var(--font-mono);
+  font-size: var(--fs-eyebrow);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-faint);
+  margin-bottom: var(--space-2);
+}
+
+.copyBlock p {
+  color: var(--color-text-dim);
+  font-size: var(--fs-body);
+}
+
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-8);
+}
+
+.pill {
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: var(--fs-small);
+  color: var(--color-text-dim);
+}
+
+.visual {
+  margin-top: var(--space-16);
+}
+
+.typographic {
+  border: 1px solid var(--color-border-strong);
+  border-radius: 6px;
+  padding: var(--space-16) var(--space-8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  text-align: center;
+  background: var(--color-surface);
+}
+
+.typographicWord {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 300;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  color: var(--color-text);
+}
+
+.typographicCaption {
+  font-family: var(--font-mono);
+  font-size: var(--fs-small);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-faint);
+}

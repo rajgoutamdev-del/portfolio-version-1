@@ -1,0 +1,41 @@
+.statement {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: var(--fs-display);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+  max-width: 16ch;
+}
+
+.divider {
+  margin: var(--space-16) 0 var(--space-8);
+}
+
+.experience {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.company {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: var(--fs-h1);
+  color: var(--color-text);
+}
+
+.role {
+  font-family: var(--font-sans);
+  font-size: var(--fs-body-lg);
+  color: var(--color-text-dim);
+}
+
+.timeline {
+  font-family: var(--font-mono);
+  font-size: var(--fs-small);
+  color: var(--color-text-faint);
+  max-width: 40ch;
+}

@@ -1,0 +1,6 @@
+.line {
+  height: 1px;
+  width: 100%;
+  background: var(--color-border-strong);
+  transform: scaleX(0);
+}

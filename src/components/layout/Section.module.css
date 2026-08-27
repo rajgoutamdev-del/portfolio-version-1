@@ -1,0 +1,9 @@
+.section {
+  position: relative;
+  padding: var(--space-32) var(--edge-padding);
+}
+
+.inner {
+  max-width: var(--content-max);
+  margin-inline: auto;
+}

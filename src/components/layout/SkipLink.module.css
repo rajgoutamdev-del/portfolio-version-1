@@ -1,0 +1,21 @@
+.link {
+  position: fixed;
+  top: var(--space-4);
+  left: var(--space-4);
+  z-index: 10000;
+  padding: var(--space-3) var(--space-6);
+  background: var(--color-electric);
+  color: var(--color-bg);
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: var(--fs-small);
+  border-radius: 4px;
+  transform: translateY(-150%);
+  transition: transform var(--duration-fast) var(--ease-standard);
+}
+
+.link:focus-visible {
+  transform: translateY(0);
+  outline: 2px solid var(--color-bg);
+  outline-offset: 2px;
+}

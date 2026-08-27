@@ -1,0 +1,77 @@
+.section {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  padding: var(--edge-padding);
+  overflow: hidden;
+}
+
+.content {
+  position: relative;
+  z-index: var(--z-content);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.name {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: var(--fs-hero);
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+  color: var(--color-text);
+}
+
+.role {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: var(--fs-h1);
+  color: var(--color-text-dim);
+}
+
+.focus {
+  font-family: var(--font-mono);
+  font-size: var(--fs-eyebrow);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-violet);
+}
+
+.slogan {
+  margin-top: var(--space-8);
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: var(--fs-display);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+}
+
+.scrollHint {
+  position: absolute;
+  bottom: var(--space-8);
+  left: var(--edge-padding);
+  z-index: var(--z-content);
+  font-family: var(--font-mono);
+  font-size: var(--fs-eyebrow);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-text-faint);
+}
+
+@media (max-width: 640px) {
+  .name {
+    font-size: clamp(2.25rem, 12vw, 3.5rem);
+  }
+
+  .slogan {
+    font-size: clamp(2rem, 11vw, 3.25rem);
+  }
+
+  .scrollHint {
+    display: none;
+  }
+}

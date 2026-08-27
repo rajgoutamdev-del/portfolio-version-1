@@ -1,0 +1,42 @@
+.board {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  aspect-ratio: 1;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  border: 1px solid var(--color-border-strong);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.square {
+  background: var(--color-bg-elevated);
+}
+
+.square[data-tone='light'] {
+  background: #15111f;
+}
+
+.piece {
+  position: absolute;
+  width: 12.5%;
+  height: 12.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(1.1rem, 4.5vw, 1.65rem);
+  line-height: 1;
+  pointer-events: none;
+}
+
+.piece[data-color='white'] {
+  color: var(--color-text);
+}
+
+.piece[data-color='black'] {
+  color: var(--color-electric);
+  text-shadow: 0 0 10px rgba(178, 141, 255, 0.4);
+}

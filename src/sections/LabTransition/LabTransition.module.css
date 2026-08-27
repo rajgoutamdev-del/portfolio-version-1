@@ -1,0 +1,48 @@
+.section {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--edge-padding);
+}
+
+.stage {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+.beat {
+  grid-area: 1 / 1;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--fs-h1);
+  color: var(--color-text-dim);
+  opacity: 0;
+}
+
+.title {
+  grid-area: 1 / 1;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: var(--fs-hero);
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+  opacity: 0;
+}
+
+/* Mobile and reduced-motion: stack normally, no pin/crossfade. */
+@media (max-width: 1023px), (prefers-reduced-motion: reduce) {
+  .stage {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+  }
+
+  .beat,
+  .title {
+    opacity: 1;
+  }
+}
